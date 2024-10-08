@@ -19,6 +19,17 @@ window.addEventListener('scroll', ()=>{
     }
 })
 
+// uiux section //
+
+// Selecting the UI/UX section
+const uiuxSection = document.querySelector('.services'); // Replace with actual class or id of UI/UX section
+
+// Adding event listener to redirect when clicked
+uiuxSection.addEventListener('click', function() {
+    window.location.href = 'https://your-ux-ui-link-here.com';  // Replace with your actual link
+});
+
+
 // -------- light mode and dark mode -----------
 
 if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
